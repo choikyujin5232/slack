@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;600;700;900&display=swap');
+
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('/fonts/GmarketSansBold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('/fonts/GmarketSansLight.otf') format('opentype');
+    font-weight: 300; /* light는 일반적으로 300의 폰트 가중치에 해당합니다. */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('/fonts/GmarketSansMedium.otf') format('opentype');
+    font-weight: 500; /* medium은 일반적으로 500의 폰트 가중치에 해당합니다. */
+    font-style: normal;
+}
+
+:root {
+    --font-primary: 'Noto Sans KR', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+    --font-special: 'Playfair Display', serif;
+
+    --font-size-base: 16px;
+    --font-size-lg: 24px;
+    --font-size-sm: 14px;
+
+    --font-weight-thin: 100;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-weight-black: 900;
+    --font-weight-semiBold: 600;
+
+    --color-primary: #282828;
+    --color-secondary:#353535;
+    --background-color: #f9f9f9;
+}
