@@ -75,32 +75,52 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // section-3 애니메이션
 document.addEventListener('DOMContentLoaded', () => {
-    const images = document.querySelectorAll('.section-3_illustration img');
-    const target = document.querySelector('.section-3_illustration');
-    const texts = document.querySelectorAll('.animate-item');
+  const section = document.querySelector('.section-3'); 
+  if (!section) return;
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                setTimeout(() => {
-                    images.forEach((img) => {
-                        img.classList.add('animate');
-                    });
-                }, 200);
+  const images = section.querySelectorAll('.section-3_illustration img');
+  const texts  = section.querySelectorAll('.animate-item');
 
-                texts.forEach((text, index) => {
-                    setTimeout(() => {
-                        text.classList.add('show');
-                    }, index * 200);
-                    observer.unobserve(entry.target);
-                })
-            }
-        })
-    }, {
-        threshold: 1
-    })
-    observer.observe(target);
-})
+  images.forEach(img => img.classList.remove('animate'));
+  texts.forEach(t => t.classList.remove('show'));
+
+  const play = () => {
+    
+    setTimeout(() => images.forEach(img => img.classList.add('animate')), 200);
+    texts.forEach((t, i) => setTimeout(() => t.classList.add('show'), i * 200));
+  };
+
+  let armed = false; 
+  let done  = false; 
+
+ 
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (done || !armed) return;                      
+      if (e.isIntersecting && e.intersectionRatio >= 0.35) { 
+        done = true;
+        play();
+        io.disconnect();
+      }
+    });
+  }, {
+   
+    rootMargin: '-10% 0px -10% 0px',
+    threshold: [0, 0.2, 0.35, 0.6] 
+  });
+
+  io.observe(section);
+
+ 
+  const arm = () => { armed = true; };
+  window.addEventListener('scroll', arm,     { once: true, passive: true });
+  window.addEventListener('wheel', arm,      { once: true, passive: true });
+  window.addEventListener('touchstart', arm, { once: true });
+
+  
+  setTimeout(() => { if (!armed) armed = true; }, 800);
+});
+
 
 // section-4 애니메이션
 document.addEventListener('DOMContentLoaded', () => {
