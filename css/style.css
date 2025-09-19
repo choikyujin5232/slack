@@ -40,11 +40,11 @@ main {
     height: 4.5rem;
     position: fixed;
     z-index: 999; 
-    border-bottom: 0.5px solid rgba(181, 181, 181, 0); /* 처음엔 투명 */
-    transition: border-color 0.3s ease;  /* 자연스럽게 */
+    border-bottom: 0.5px solid rgba(181, 181, 181, 0); 
+    transition: border-color 0.3s ease;  
 }
 .c-nav--primary--expanded.active {
-  border-color: rgba(181, 181, 181, 0.2);   /* 스크롤 내리면 진하게 */
+  border-color: rgba(181, 181, 181, 0.2);  
 }
 
 
@@ -57,16 +57,16 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2rem; /* margin 대신 padding 사용 */
-    margin: 0 auto; /* 중앙 정렬 */
+    padding: 0 2rem; 
+    margin: 0 auto; 
 }
 
 .c-extnav-level__0 {
-    display: flex;         /* Flexbox 사용 */
-    justify-content: center; /* 가운데 정렬 (원하는 정렬로 조정 가능) */
-    align-items: center;   /* 세로 중앙 정렬 */
-    gap: 20px;             /* 요소 사이 간격 */
-    list-style: none;      /* 기본 목록 스타일 제거 */
+    display: flex;        
+    justify-content: center; 
+    align-items: center;   
+    gap: 20px;            
+    list-style: none;      
     padding: 0;
     margin: 0;
 }
@@ -79,7 +79,7 @@ main {
 }
 
 .c-extnav-level__0 li {
-    align-items: center;  /* 세로 중앙 정렬 */
+    align-items: center;  
     font-family: var(--color-primary);
     font-weight: 500;
     font-size: 1rem;
@@ -95,17 +95,6 @@ main {
   font-weight: 500;
 }
 
-/* .nav_parent.nav_parent_l1:after {
-  content: "";
-  display: block;
-  width: 8px;
-  height: 6px;
-  background: url(https://www.notion.com/front-static/shared/icons/nav-caret.svg);
-  position: absolute;
-  top: 50%;
-  margin-top: -2px;
-  right: 10px;
-} */
 
 
 /*------------------------------- header -----------------------------*/
@@ -168,7 +157,6 @@ main {
 }
 
 .c-button.v--primary:nth-child(1) {
-  /* 첫 번째 <a> 요소만 선택 */
   margin-right: 0.3rem;
 }
 
@@ -501,7 +489,7 @@ video {
 
 #Layer_1 path {
   stroke-width: 9;
-  stroke-dasharray: 1000;       /* 선 길이보다 큼 */
+  stroke-dasharray: 1000;       
   stroke-dashoffset: 1000;
 }
 
@@ -670,7 +658,6 @@ video {
   gap: 16px;
 }
 
-/* 허들과 캔버스는 별도로 inline */
 .huddle {
   grid-column: 1;
 }
@@ -726,7 +713,7 @@ video {
     transform: translateY(8px);
   }
   50% {
-    transform: translateY(0px);  /* 위로 8px */
+    transform: translateY(0px);  
   }
   100% {
     transform: translateY(8px);
@@ -810,8 +797,8 @@ video {
 
 .section-6_card-number {
   font-size: 5.9rem;
-  font-family: 'Gmarket Sans'; /* 고정폭 숫자 */
-  width: 2ch;              /* 숫자 자릿수 고정 (최대 9999까지) */
+  font-family: 'Gmarket Sans'; 
+  width: 2ch;              
 }
 
 .S5.animate {
@@ -923,9 +910,9 @@ video {
 }
 
 .section-7_content_item:hover {
-  transform: translateY(-5px) scale(1.03); /* 살짝 뜨면서 커짐 */
+  transform: translateY(-5px) scale(1.03); 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  background-color: #f9f9f9; /* 배경 살짝 밝게 or 변경 */
+  background-color: #f9f9f9; 
 }
 
 .section-7_content_item_imgbox img {
@@ -981,9 +968,9 @@ video {
 
 .section-8_btn1:hover {
   transform: translateY(-3px) scale(1.04);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* 자연스러운 그림자 */
-  background-color: #f9f2fb; /* 살짝 은은한 배경 */
-  color: #4e0e60; /* 약간 진한 포인트 컬러 */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+  background-color: #f9f2fb; 
+  color: #4e0e60; 
 }
 
 .section-8_btn2 {
@@ -1000,14 +987,13 @@ video {
 
 .section-8_btn2:hover {
   transform: translateY(-3px) scale(1.04);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* 자연스러운 그림자 */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
 }
 
 /*------------------------------- section8 -----------------------------*/
 
 
 .footer {
-  /* border-bottom: 0.2px solid #c0c0c0; */
   display: flex;
   margin: 4rem 16rem;
   justify-content: space-between;

@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('scroll', function () {
       const header = document.querySelector('.c-nav--primary--expanded');
       
-      if (window.scrollY > 10) {  // 스크롤 10px 이상 내리면
+      if (window.scrollY > 10) {  
         header.classList.add('active');
       } else {
         header.classList.remove('active');
@@ -30,21 +30,21 @@ document.addEventListener("DOMContentLoaded", function () {
                 const slideIndex = parseInt(this.getAttribute("data-slide"), 10);
                 console.log(`🔄 버튼 클릭됨: 비디오 ${slideIndex + 1}로 이동`);
                 swiper.slideToLoop(slideIndex, 500, false);
-                swiper.loopFix(); // 🔥 loop 모드에서 정상 동작하도록 설정
+                swiper.loopFix(); 
             });
         });
     }, 500);
 
-    // 🎥 슬라이드 변경 시 비디오 컨트롤
+    //  슬라이드 변경 시 비디오 컨트롤
     swiper.on("slideChange", function () {
         document.querySelectorAll("video").forEach((video) => {
-            video.pause(); // 모든 비디오 정지
+            video.pause(); 
         });
 
         setTimeout(() => {
             const activeVideo = document.querySelector(".swiper-slide-active video");
             if (activeVideo) {
-                activeVideo.muted = true; // 🔥 muted 속성 적용
+                activeVideo.muted = true; 
                 activeVideo.play().catch(error => console.error("비디오 자동 재생 실패:", error));
             }
         }, 100);
@@ -131,7 +131,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // 일정 시간(예: 500ms) 후 애니메이션 실행
                 setTimeout(() => {
                     lines.forEach((line) => {
                         line.classList.add('animate-2');
@@ -176,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.addEventListener("DOMContentLoaded", () => {
     const elements = document.querySelectorAll(".section-6_card-number");
-    const animatedSet = new Set(); // 이미 실행된 요소 저장용
+    const animatedSet = new Set(); 
 
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
@@ -186,12 +185,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const target = parseInt(el.textContent);
             el.textContent = "0";
             animateNumber(el, target, 1500);
-            animatedSet.add(el); // 한 번만 실행되도록 저장
+            animatedSet.add(el); 
           }
         }
       });
     }, {
-      threshold: 0.5 // 요소가 화면의 50% 이상 보이면 실행
+      threshold: 0.5 
     });
 
     elements.forEach(el => observer.observe(el));
@@ -208,7 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
           elements.forEach((el, index) => {
             setTimeout(() => {
               el.classList.add('show');
-            }, index * 100); // 순차 효과 (선택)
+            }, index * 100); 
           });
           observer.unobserve(entry.target);
         }
