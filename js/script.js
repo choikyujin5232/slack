@@ -220,11 +220,31 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // 클릭 시 메뉴 토굴
-const nav = document.querySelector('.c-nav--primary--expanded');
-const btn = document.querySelector('.hamburger');
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const nav = document.querySelector(".c-nav--primary--expanded");
 
-btn.addEventListener('click', () => {
-  nav.classList.toggle('nav-open');
+  hamburger.addEventListener("click", () => {
+    nav.classList.toggle("nav-open");
+  });
+});
+
+// footer 클릭 시 메뉴 토글
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButtons = document.querySelectorAll(".footer-menu-list-item .toggleicon");
+
+  toggleButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const parent = button.closest(".footer-menu-list-item");
+
+      // 현재 상태 확인
+      const expanded = button.getAttribute("aria-expanded") === "true";
+
+      // 상태 업데이트
+      button.setAttribute("aria-expanded", !expanded);
+      parent.classList.toggle("active");
+    });
+  });
 });
 
 

@@ -27,13 +27,6 @@
                         <img src="./img/pngwing.com.png" width="100px" height="auto" alt="로고 이미지">
                     </a>
                 </div>
-                <button class="hamburger" aria-label="메뉴 열기">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="3" y1="6" x2="21" y2="6" />
-                        <line x1="3" y1="12" x2="21" y2="12" />
-                        <line x1="3" y1="18" x2="21" y2="18" />
-                    </svg>
-                </button>
                 <div class="c-nav_list template_layout">
                     <ul class="c-extnav-level__0">
                         <li id="nav_features" class="nav_parent nav_parent_l1">
@@ -72,6 +65,20 @@
                     <a href="#">데모요청하기</a>
                     <a href="#">시작하기</a>
                 </div>
+                <button class="hamburger" aria-label="메뉴 열기">
+                    <svg class="icon icon-hamburger" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <line x1="3" y1="12" x2="21" y2="12" />
+                        <line x1="3" y1="18" x2="21" y2="18" />
+                    </svg>
+
+                    <svg class="icon icon-close" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <line x1="4" y1="4" x2="20" y2="20" />
+                        <line x1="20" y1="4" x2="4" y2="20" />
+                    </svg>
+                </button>
             </div>
         </nav>
     </header>
@@ -125,7 +132,7 @@
             </header>
             <div class="c-billboard__content o-content-container v--inverse">
                 <div class="c-billboard__illustration">
-                    <img src="./img/7878.png" width="600px" height="auto" alt="seciton1 이미지">
+                    <img src="./img/7878.png" alt="seciton1 이미지">
                 </div>
             </div>
         </section> <!-- c-billboard v--what-is-slack__section-billboard v--what-is-slack__peach-background -->
@@ -213,12 +220,12 @@
         <section class="section-3">
             <div class="section-3_content">
                 <div class="section-3_illustration">
-                    <img width="350px" height="auto" src="./img/01.png" alt="">
-                    <img width="350px" height="auto" src="./img/02.png" alt="">
-                    <img width="350px" height="auto" src="./img/03.png" alt="">
+                    <img src="./img/01.png" alt="">
+                    <img src="./img/02.png" alt="">
+                    <img src="./img/03.png" alt="">
                 </div>
             </div>
-            <header class="section-3_header">
+            <div class="section-3_header">
                 <div class="section-3_kicker">
                     <span class="S3-type-eyebrow S3 animate-item">외부 커뮤니케이션 및 협업</span>
                 </div>
@@ -253,7 +260,7 @@
                         <div class="section-3_header_list_item">이메일로 인한 피싱 및 스팸 공격으로부터 팀이 노출되지 않도록 지켜주세요.</div>
                     </li>
                 </ul>
-            </header>
+            </div>
         </section>
 
         <section class="section-4">
@@ -305,7 +312,7 @@
                     </svg>
                 </div>
             </div>
-            <header class="section-4_header">
+            <div class="section-4_header">
                 <div class="section-3_kicker">
                     <span class="S3-type-eyebrow S3 animate-item">Slack,connect</span>
                 </div>
@@ -318,7 +325,10 @@
                                 d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M11,16.061l-4.054-4.053l1.061-1.061L11,13.939	l4.985-4.986l1.061,1.061L11,16.061z">
                             </path>
                         </svg>
-                        <div class="section-4_header_list_item">앱들로 간편하게 미팅을 예약하고 문서를 공유하며, 일상 업무도<br>손 쉽게 처리하세요.</div>
+                        <div class="section-4_header_list_item only-pc">앱들로 간편하게 미팅을 예약하고 문서를 공유하며, 일상 업무도<br>손 쉽게
+                            처리하세요.</div>
+                        <div class="section-4_header_list_item only-mo">앱들로 간편하게 미팅을 예약하고 문서를 공유하며, 일상 업무도 손
+                            쉽게<br>처리하세요.</div>
                     </li>
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
@@ -327,8 +337,10 @@
                                 d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M11,16.061l-4.054-4.053l1.061-1.061L11,13.939	l4.985-4.986l1.061,1.061L11,16.061z">
                             </path>
                         </svg>
-                        <div class="section-4_header_list_item">조직 전체에 새 워크플로를 만들고 연결함으로써 업무 과정을<br>간소화하고 협업 속도를 높여보세요.
-                        </div>
+                        <div class="section-4_header_list_item only-pc">조직 전체에 새 워크플로를 만들고 연결함으로써 업무 과정을<br>간소화하고 협업 속도를
+                            높여보세요.</div>
+                        <div class="section-4_header_list_item only-mo">조직 전체에 새 워크플로를 만들고 연결함으로써 업무 과정을 간소화하고<br>협업 속도를
+                            높여보세요.</div>
                     </li>
                 </ul>
                 <p class="section-4_bottom S4 animate-item">
@@ -336,7 +348,7 @@
                         class="o-section--feature__link" data-clog-click="" data-clog-ui-element="link_book_call"
                         data-qa="link_book_call">Slack Connect에서 사용할 앱 알아보기</a>
                 </p>
-            </header>
+            </div>
         </section>
 
         <section>
@@ -442,8 +454,11 @@
                                 <div class="section-5_content_keyword_wrap">
                                     <span class="section-5_content_keyword">검색</span>
                                 </div>
-                                <div class="section-5_content_keyword_zwekd">
+                                <div class="section-5_content_keyword_zwekd only-pc">
                                     연결된 기업 시스템의 정보를<br>단 하나의 검색창에서 모두 검색
+                                </div>
+                                <div class="section-5_content_keyword_zwekd only-mo">
+                                    연결된 기업 시스템의 정보를 단 하나의 검색창에서 모두 검색
                                 </div>
                             </div>
                         </div>
@@ -507,16 +522,22 @@
                             <div class="section-6_card-number">90</div>
                             <div class="section-6_card-percent">%</div>
                         </div>
-                        <div class="section-6_card-text">
+                        <div class="section-6_card-text only-pc">
                             서로 더 긴밀히 연결되도록 Slack이<br>도와준다고 응답한 사용자의 비율
+                        </div>
+                        <div class="section-6_card-text only-mo">
+                            서로 더 긴밀히 연결되도록<br>Slack이 도와준다고 응답한<br>사용자의 비율
                         </div>
                     </div>
                     <div class="section-6_cards">
                         <div class="section-6_card-stat">
                             <div class="section-6_card-number">43</div>
                         </div>
-                        <div class="section-6_card-text">
+                        <div class="section-6_card-text only-pc">
                             Slack에서 팀이 사용하는 평균 앱의 수
+                        </div>
+                        <div class="section-6_card-text only-mo">
+                            Slack에서 팀이 사용하는<br>평균 앱의 수
                         </div>
                     </div>
                     <div class="section-6_cards">
@@ -524,8 +545,11 @@
                             <div class="section-6_card-number">87</div>
                             <div class="section-6_card-percent">%</div>
                         </div>
-                        <div class="section-6_card-text">
+                        <div class="section-6_card-text only-pc">
                             더 효율적으로 협업하는 데 Slack이<br>도움이 되었다고 대답한 사용자의 비율
+                        </div>
+                        <div class="section-6_card-text only-mo">
+                            더 효율적으로 협업하는 데<br>Slack이 도움이 되었다고<br>대답한 사용자의 비율
                         </div>
                     </div>
                 </div>
@@ -690,183 +714,228 @@
                 <div class="footer-menu">
                     <ul class="footer-menu-list-wrap">
                         <li class="footer-menu-list-item">
-                            <p>회사소개</p>
+                            <div class="footer-menu-header">
+                                <p>회사소개</p>
+                                <button class="toggleicon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-chevron-right">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                            <ul class="submenu">
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>Slack 소개</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>새 소식</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>미디어 키트</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>브랜드 센터</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>채용</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>Swag 스토어</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>블로그</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>문의하기</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
+                    </ul>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <ul class="footer-menu-list-wrap">
                         <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>Slack 소개</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>새 소식</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>미디어 키트</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>브랜드 센터</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>채용</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>Swag 스토어</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>블로그</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>문의하기</span>
-                            </a>
+                            <div class="footer-menu-header">
+                                <p>리소스</p>
+                                <button class="toggleicon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-chevron-right">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                            <ul class="submenu">
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>고객지원센터</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>리소스 라이브러리</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>커뮤니티</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>고객 사례</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>이벤트</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>파트너 혜택</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>Slack Marketplace</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>Slack 인증</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
                 <div class="footer-menu">
                     <ul class="footer-menu-list-wrap">
                         <li class="footer-menu-list-item">
-                            <p>리소스스</p>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>고객지원센터</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>리소스 라이브러리</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>커뮤니티</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>고객 사례</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>이벤트</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>파트너 혜택</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>Slack Marketplace</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>Slack 인증</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-menu">
-                    <ul class="footer-menu-list-wrap">
-                        <li class="footer-menu-list-item">
-                            <p>솔루션</p>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>엔지니어링</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>IT</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>고객 서비스</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>프로젝트관리</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>마케팅</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>보안</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>미디어</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>모든 솔루션 보기</span>
-                            </a>
+                            <div class="footer-menu-header">
+                                <p>솔루션</p>
+                                <button class="toggleicon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-chevron-right">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                            <ul class="submenu">
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>엔지니어링</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>IT</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>고객 서비스</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>프로젝트관리</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>마케팅</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>보안</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>미디어</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>모든 솔루션 보기</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
                 <div class="footer-menu">
                     <ul class="footer-menu-list-wrap">
                         <li class="footer-menu-list-item">
-                            <p>제품</p>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>데모 시청하기</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>요금</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>유료와 무료</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>접근성</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>기능 릴리스</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>변경 로그</span>
-                            </a>
-                        </li>
-                        <li class="footer-menu-list-item">
-                            <a class="footer-menu-inner" href="#">
-                                <span>상태</span>
-                            </a>
+                            <div class="footer-menu-header">
+                                <p>제품</p>
+                                <button class="toggleicon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="feather feather-chevron-right">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                            <ul class="submenu">
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>데모 시청하기</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>요금</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>유료와 무료</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>접근성</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>기능 릴리스</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>변경 로그</span>
+                                    </a>
+                                </li>
+                                <li class="footer-menu-list-item">
+                                    <a class="footer-menu-inner" href="#">
+                                        <span>상태</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
