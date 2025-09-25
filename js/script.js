@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // section-4 애니메이션
 document.addEventListener('DOMContentLoaded', () => {
   const lines = document.querySelectorAll('.section-4_line');
-  const target = document.querySelector('.section-4_header_headline');
+  const target = document.querySelector('.section-4_content');
   const texts = document.querySelectorAll(".animate-item");
 
   const observer = new IntersectionObserver((entries) => {
@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }, {
-    threshold: 1
+    threshold: 0
   });
 
   observer.observe(target);
